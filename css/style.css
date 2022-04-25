@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@1,300&display=swap');
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 1px 8px #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(100deg, silver 33%, white 33%, silver 100%);
+  overflow: hidden;
+}
+header ul{
+    margin: 10px 0;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px;
+  color: white;
+}
+
+main{
+    margin-top: 20px;
+}
+
+section {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: black;
+}
+
+#intro {
+    font-size: 30px;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+#bio{
+    background-color: turquoise;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+#bio p{
+    text-align: center;
+    background-color: white;
+    
+}
+
+#resume{
+    background-color: silver;
+}
+
+#resume img{
+    border: solid silver;
+}
+
+#resume img:hover{
+    border: solid black;
+    border-radius: 5%;
+    box-shadow: 1px 2px gray;
+}
+
+#projects{
+    background-color: aquamarine;
+}
+
+#projects ul{
+    padding: 0;
+}
+
+#projects li{
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    border-radius: 10%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#projects li:hover{
+    box-shadow: 0px 0px 2px 3px white;
+}
+
+#projects img{
+    width: 150px;
+    height: 120px;
+    border-radius: 10% 10% 10% 10%;
+}
+
+#projects p{
+    margin: 0;
+}
+
+#contact{
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+#contact img{
+    border: solid white;
+    width: 64px;
+}
+
+#contact img:hover{
+    border: solid silver;
+    border-radius: 5%;
+    box-shadow: 0px 0px 2px 3px silver;
+}
+
+#linkedinLogo{
+    padding: 3px;
+    margin-left: 10px
+}
+
+@media screen and (max-width: 500px){
+    #intro{
+        text-align: center;
+    }
+
+    #projects li{
+        display: inline;
+        border:none;
+    }
+    #projects img{
+        display: none;
+    }
+    #projects li:hover{
+        box-shadow: none;
+    }
+}
