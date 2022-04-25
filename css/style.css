@@ -4,6 +4,16 @@ body {
   margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+
 header {
   display: flex;
   justify-content: flex-end;
@@ -27,7 +37,7 @@ header li {
 }
 
 main{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 section {
@@ -56,7 +66,8 @@ footer{
 #bio p{
     text-align: center;
     background-color: white;
-    
+    margin: 20px;
+    opacity: 0.7;
 }
 
 #resume{
@@ -68,9 +79,8 @@ footer{
 }
 
 #resume img:hover{
-    border: solid black;
-    border-radius: 5%;
-    box-shadow: 1px 2px gray;
+    transform: scale(1.5);
+    box-shadow: 0px 0px 1px 3px black;
 }
 
 #projects{
@@ -86,12 +96,14 @@ footer{
     text-align: center;
     list-style: none;
     border-radius: 10%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #projects li:hover{
     box-shadow: 0px 0px 2px 3px white;
+    transform: scale(1.5);
+    
 }
 
 #projects img{
@@ -99,6 +111,7 @@ footer{
     height: 120px;
     border-radius: 10% 10% 10% 10%;
 }
+
 
 #projects p{
     margin: 0;
@@ -119,6 +132,7 @@ footer{
     border: solid silver;
     border-radius: 5%;
     box-shadow: 0px 0px 2px 3px silver;
+    transform: scale(1.5);
 }
 
 #linkedinLogo{
