@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a{
     text-decoration: none;
     color: black;
@@ -17,7 +21,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(100deg, silver 33%, white 33%, silver 100%);
+  background: linear-gradient(90deg, black, white);
   overflow: hidden;
   height: 40px;
 }
@@ -40,20 +44,28 @@ nav li:hover{
 
 main{
     margin-top: 30px;
+    
 }
 
 section {
     display: flex;
-    height: 50vh;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+#profilePic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 
 #intro {
     font-size: 30px;
-    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #bf4117);
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #bio{
