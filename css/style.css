@@ -82,24 +82,9 @@ section {
     justify-content: center;
 }
 
-
-
-
-#resume{
-    background-color: silver;
-}
-
-#resume img{
-    border: solid silver;
-}
-
 #resume img:hover{
     transform: scale(1.5);
     box-shadow: 0px 0px 1px 3px black;
-}
-
-#projects{
-    background-color: aquamarine;
 }
 
 #projects ul{
@@ -153,21 +138,4 @@ section {
 #linkedinLogo{
     padding: 3px;
     margin-left: 10px
-}
-
-@media screen and (max-width: 500px){
-    #intro{
-        text-align: center;
-    }
-
-    #projects li{
-        display: inline;
-        border:none;
-    }
-    #projects img{
-        display: none;
-    }
-    #projects li:hover{
-        box-shadow: none;
-    }
 }
