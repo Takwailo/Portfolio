@@ -93,7 +93,8 @@ section {
 }
 
 #backEnd,
-#resume {
+#resume, 
+#language {
     display: none;
 }
 
