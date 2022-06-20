@@ -92,6 +92,10 @@ section {
     height: 60%
 }
 
+h2 {
+    color: white;
+}
+
 #backEnd,
 #resume, 
 #language {
@@ -104,6 +108,7 @@ section {
     background-color: #f1f1f1;
     width: 30%;
     height: 100%;
+    opacity: 0.8;
 }
 
 .tab button {
@@ -117,10 +122,11 @@ section {
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
+
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    background-color: rgb(161, 159, 159);
 }
 
 .tab button.active {
@@ -138,6 +144,7 @@ section {
     background-color: white;
     justify-content: space-evenly;
     align-items: center;
+    opacity: 0.6;
 }
 
 .tabcontent img {
@@ -156,8 +163,9 @@ section {
     box-shadow: 0px 0px 1px 3px black;
 }
 
-#projects {
+#projects h2{
     color: white;
+    text-align: center;
 }
 
 #projects ul {
