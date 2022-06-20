@@ -11,6 +11,6 @@ function openSkill(evt, skillType) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(skillType).style.display = "block";
+    document.getElementById(skillType).style.display = "flex";
     evt.currentTarget.className += " active";
 }
