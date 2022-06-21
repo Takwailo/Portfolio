@@ -71,6 +71,7 @@ nav li:hover {
         black 80%,
         black 100%
     );
+    z-index: 1;
 }
 
 #hamburger-menu #sidebar-menu {
