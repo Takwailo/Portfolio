@@ -73,7 +73,7 @@ nav li:hover {
     position: fixed;
     top: 0;
     right: -250px;
-    width: 200px;
+    width: 50%;
     height: 100%;
     background-color: black;
     transition: 0.3s;
@@ -81,6 +81,7 @@ nav li:hover {
     box-sizing: border-box;
     flex-direction: column;
     justify-content: flex-start;
+    z-index: 4;
 }
 
 #hamburger-menu h3 {
@@ -110,10 +111,7 @@ nav li:hover {
     visibility: visible;
     right: 0;
 }
-#hamburger-input:checked ~ .overlay {
-    visibility: visible;
-    opacity: 1;
-}
+
 
 main {
     margin-top: 30px;
@@ -129,8 +127,8 @@ section {
 }
 
 #profilePic {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     border: solid white 3px;
 }
@@ -152,6 +150,7 @@ section {
 #introContainer div {
     margin: 20px;
     justify-content: center;
+    font-size: 80%;
 }
 
 * {
@@ -180,6 +179,7 @@ h2 {
     width: 30%;
     height: 100%;
     opacity: 0.8;
+    z-index: -1;
 }
 
 .tab button {
@@ -215,10 +215,11 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     opacity: 0.6;
+    flex-wrap: wrap
 }
 
 .tabcontent img {
-    width: 100px;
+    
     height: 100px;
 }
 
@@ -230,7 +231,6 @@ h2 {
 
 #resume img:hover {
     transform: scale(1.5);
-    box-shadow: 0px 0px 1px 3px black;
 }
 
 #projects h2 {
@@ -303,4 +303,26 @@ h2 {
     #hamburger-menu {
         display: flex;
     }
+
+    .tabcontent {
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: black;
+    }
+    #backEnd img{
+        height:10%;
+    }
+
+    .tabcontent {
+        flex-direction: column;
+    }
+
+    #introContainer {
+        flex-direction: column;
+    }
+
 }
