@@ -59,13 +59,18 @@ nav li:hover {
     padding: 0px;
     margin: 0px;
     background: linear-gradient(
-        to bottom, 
-        black, black 20%, 
-        white 20%, white 40%, 
-        black 40%, black 60%, 
-        white 60%, white 80%, 
-        black 80%, black 100%
-      );
+        to bottom,
+        black,
+        black 20%,
+        white 20%,
+        white 40%,
+        black 40%,
+        black 60%,
+        white 60%,
+        white 80%,
+        black 80%,
+        black 100%
+    );
 }
 
 #hamburger-menu #sidebar-menu {
@@ -89,6 +94,8 @@ nav li:hover {
 }
 
 #hamburger-menu ul {
+    display: flex;
+    flex-direction: column;
     padding-left: 0px;
 }
 
@@ -110,7 +117,6 @@ nav li:hover {
     visibility: visible;
     right: 0;
 }
-
 
 main {
     margin-top: 30px;
@@ -213,11 +219,10 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     opacity: 0.6;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .tabcontent img {
-    
     height: 100px;
 }
 
@@ -248,7 +253,7 @@ h2 {
     text-align: center;
     list-style: none;
     border-radius: 10%;
-    margin:20px;
+    margin: 20px;
     border: solid white 1px;
 }
 
@@ -292,7 +297,6 @@ h2 {
     transform: scale(1.5);
 }
 
-
 @media screen and (max-width: 700px) {
     #mainMenu {
         display: none;
@@ -310,8 +314,8 @@ h2 {
     body {
         background: black;
     }
-    #backEnd img{
-        height:10%;
+    #backEnd img {
+        height: 10%;
     }
 
     .tabcontent {
@@ -321,5 +325,4 @@ h2 {
     #introContainer {
         flex-direction: column;
     }
-
 }
