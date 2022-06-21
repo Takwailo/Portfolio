@@ -81,7 +81,6 @@ nav li:hover {
     box-sizing: border-box;
     flex-direction: column;
     justify-content: flex-start;
-    z-index: 4;
 }
 
 #hamburger-menu h3 {
@@ -179,7 +178,6 @@ h2 {
     width: 30%;
     height: 100%;
     opacity: 0.8;
-    z-index: -1;
 }
 
 .tab button {
@@ -250,8 +248,7 @@ h2 {
     text-align: center;
     list-style: none;
     border-radius: 10%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin:20px;
     border: solid white 1px;
 }
 
