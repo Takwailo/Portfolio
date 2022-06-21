@@ -44,20 +44,6 @@ nav li:hover {
     transform: scale(1.1);
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-    overflow: hidden;
-    background: black;
-    z-index: -1;
-}
-
 #hamburger-input {
     display: none;
 }
@@ -113,7 +99,6 @@ nav li:hover {
 
 #hamburger-menu a {
     color: white;
-    font-size: 1.3rem;
     text-decoration: none;
 }
 
@@ -254,7 +239,10 @@ h2 {
 }
 
 #projects ul {
+    display: flex;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #projects li {
@@ -275,7 +263,7 @@ h2 {
 #projects img {
     width: 150px;
     height: 120px;
-    border-radius: 10% 10% 10% 10%;
+    border-radius: 10%;
 }
 
 #projects p {
@@ -308,7 +296,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
     #mainMenu {
         display: none;
     }
